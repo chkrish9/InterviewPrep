@@ -102,7 +102,7 @@ export async function getCurrentUser(): Promise<User | null> {
   }
 }
 
-export async function isAuthenticatd() {
+export async function isAuthenticated() {
   const user = await getCurrentUser();
   return !!user;
 }
